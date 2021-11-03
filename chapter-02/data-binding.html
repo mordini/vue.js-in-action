@@ -13,13 +13,12 @@
     <header>
       <h1 v-text="sitename"></h1> <!-- show data binding for the sitename property -->
     </header>
-    <p>Welcome to {{ sitename }} !</p> <!-- demonstrate displaying the property value -->
   </div> <!-- the element where Vue will mount our application -->
 
   <!-- the vue constructor -->
   <script type="text/javascript">
 
-    let webstore = new Vue({
+    let webstore = new Vue({ // new Vue object
       el: '#app', // lists a css selector used to locate the DOM mounting point
       data: {
         sitename: 'Vue.js Pet Depot'
